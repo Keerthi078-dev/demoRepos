@@ -17,6 +17,7 @@ public with sharing class AccountService {
     }
     
     // Method to update an Account
+    //test comit
     public static void updateAccount(Id accountId, String name, String phone, String website) {
         Account acc = [SELECT Id, Name, Phone, Website FROM Account WHERE Id = :accountId LIMIT 1];
         acc.Name = name;
